@@ -39,7 +39,7 @@ function getFoodItem() {
 
             }
             else {
-                generateHtml = 'SORRY THERE IS SUCH FOOD';
+                generateHtml = 'SORRY THERE IS NO SUCH FOOD';
 
             }
 
