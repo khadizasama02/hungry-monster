@@ -1,7 +1,6 @@
 const searchButton = document.getElementById('search-button');
 const searchBar = searchButton.value;
 const foodList = document.getElementById('meal');
-// const mealList = foodList.value;
 
 
 
@@ -45,6 +44,7 @@ function getFoodItem() {
             }
 
             foodList.innerHTML = generateHtml;
+            
         });
 }
 const displayingredientDetails = idMeal => {
@@ -99,50 +99,3 @@ const foodInfo = food => {
 
 
 
-// const displayFood = food => {
-//     const foodCatagory = document.getElementById('catagory-name');
-//     const foodName = foodCatagory.value;
-//     fetch(`https://www.themealdb.com/api/json/v1/1/filter.php?c=${foodName}`)
-//         .then(res => res.json())
-//         .then(data => {
-//             let html = "";
-//             if(data.meals)
-//             {
-//                 data.meals.forEach(meal => {
-//                     html +=
-//                     `
-//                     <div class ="meal-img">
-//                     <img src = "${meal.strMealThumb}">
-//                     </div>
-//                     <div class = "meal-name">
-//                     <h3>'${meal.strMeal}'</h3>
-//                     </div>
-//                     `
-
-//                 });
-//             }
-//             meal
-            // const foodView = document.getElementById('food-view')
-
-            // food.forEach(foods => {
-            //     const foodDiv = document.createElement('div');
-            //     foodDiv.className = 'food';
-            //     // const foodButton = document.createElement('button');
-            //     const newDiv = document.createElement('div');
-            //     const name = document.createElement('h3');
-            //     name.innerText = foods[0].strMeal;
-            //     const image = document.createElement('img');
-            //     image.innerHTML = foods[0].strMealThumb;
-            //     newDiv.appendChild('name');
-            //     newDiv.appendChild('image');
-            //     // foodButton.appendChild('newDiv');
-            //     foodDiv.appendChild('newDiv');
-            //     foodView.appendChild('foodDiv');
-            // })
-
-
-
-
-
-    //     })
-    // }        
