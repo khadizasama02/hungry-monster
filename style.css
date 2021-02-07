@@ -1,0 +1,36 @@
+#meal
+{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-gap: 30px;
+    padding: 30px;
+    margin-left: auto;
+   
+}
+.item 
+{
+   
+    margin: 0 auto;
+    padding-left: 50px;
+
+}
+.item img
+{
+    width: 330px;
+    
+}
+.item a
+{
+    text-decoration: none;
+    font-size: 15px;
+    color:navy;
+}
+body
+{
+    background-color: #00cec9;
+}
+.item h1
+{
+    font-size: 30px;
+ 
+}
