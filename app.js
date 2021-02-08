@@ -7,6 +7,7 @@ const foodList = document.getElementById('meal');
 searchButton.addEventListener('click', getFoodItem);
 
 function getFoodItem() {
+    document.getElementById('food-details').innerHTML="";
     let inputText = document.getElementById('food-name').value;
     console.log(inputText);
     fetch(`https://www.themealdb.com/api/json/v1/1/search.php?s=${inputText}`)
@@ -39,7 +40,9 @@ function getFoodItem() {
 
             }
             else {
-                generateHtml = 'SORRY THERE IS NO SUCH FOOD';
+                generateHtml = `
+                <h4>SORRY there is no such food</h4>
+                `;
 
             }
 
